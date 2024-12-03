@@ -112,8 +112,8 @@ GROUP BY e.City
 HAVING SUM(od.Quantity) = (
     SELECT TOP 1 SUM(od2.Quantity)
     FROM [Order Details] od2
-    INNER JOIN Orders o2 ON od2.OrderID = o2.OrderID
-    INNER JOIN Customers c2 ON o2.CustomerID = c2.CustomerID
+    JOIN Orders o2 ON od2.OrderID = o2.OrderID
+    JOIN Customers c2 ON o2.CustomerID = c2.CustomerID
     GROUP BY c2.City
     ORDER BY SUM(od2.Quantity) DESC
 )
