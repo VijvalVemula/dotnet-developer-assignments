@@ -1,0 +1,55 @@
+Understanding Data Types |
+--------------------------
+Q1.
+a. String
+b. float or double
+c. Int
+d. enum
+e. decimal
+f. float or double
+g. long
+h. long
+i. int
+----------------------------------
+Q2. 
+Value type variables:
+- Stores data
+- Stored in stack memory
+- Eg: int, float, double
+- Memory allocation is automatic based on the scope of the variable
+
+Reference type variables:
+- stores address of the data's memory loc.
+- Stored in head memory
+- eg: class, string, array
+- Required garbage collection for memory cleaning and management.
+
+Boxing:
+- Value type variables >>> Reference type variables
+- Eg: int n = 10;
+      object boxedNum = n;
+
+Unboxing:
+- Exact opposite of boxing: Ref type >>> val type
+- Eg: object boxedNum = 10;
+      int n = (int)boxedNum; 
+-------------------------------------
+Q3:
+Managed resources:
+- Resources that are controlled and cleaned up by the .NET Runtime
+- Eg: Array, strings, lists
+
+Unmanaged resources:
+- They require explicit clean up, .NET runtime does not do that.
+- Eg: File handles, database connections, memory allocated via external libraries
+-------------------------------------
+Q4:
+Garbage collector cleans up the memory by automatically deallocating the memory to un-used objects. 
+It is important to clean up the space, and to prevent memory leaks. 
+ 
+ 
+
+
+
+ 
+
